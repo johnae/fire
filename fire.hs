@@ -8,4 +8,4 @@ main = do
     (cmd:arguments) -> do
       createProcess (proc cmd arguments){ create_group = True }
       return ()
-    _ -> putStrLn "at least one argument (the command to run) is required"
+    _ -> return ()
